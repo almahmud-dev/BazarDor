@@ -17,7 +17,7 @@ const Navber = () => {
         <div className="flex h-20 items-center justify-between">
 
           {/* Logo Section */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             {/* Replace with your actual logo */}
             <img src={logo} alt="Bazardor Logo" className="h-10 w-auto" />
            
