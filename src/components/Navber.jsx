@@ -29,7 +29,7 @@ const Navber = () => {
               <a
                 key={item}
                 href="#"
-                className={`text-sm font-semibold transition-colors ${
+                className={`text-sm font-medium font-inter transition-colors ${
                   index === 0
                     ? 'text-[#0e7c61]'
                     : 'text-slate-700 hover:text-[#0e7c61]'
@@ -57,7 +57,7 @@ const Navber = () => {
 
             {/* Submit Complaint Button */}
             <button
-              className="flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:opacity-90 active:scale-95"
+              className="flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold text-white shadow-md transition-all hover:opacity-90 active:scale-95"
               style={{ backgroundColor: '#f59e0b' }}
             >
               <MdOutlineCampaign className="text-xl" />
