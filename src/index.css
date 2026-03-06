@@ -2,3 +2,7 @@
 .container {
     @apply max-w-[1232px] mx-auto;
 }
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+}
