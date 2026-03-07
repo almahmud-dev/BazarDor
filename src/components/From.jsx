@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { TbShieldCheck, TbClock24, TbEyeOff, TbBolt } from 'react-icons/tb'
 import { MdOutlineCampaign } from 'react-icons/md'
+import { FaLock } from "react-icons/fa";
 import { FiUser, FiPhone, FiMapPin, FiFileText, FiArrowRight, FiCheck } from 'react-icons/fi'
 
 /* ── ফিচার ব্যাজ ── */
@@ -213,8 +214,8 @@ const ComplaintSection = () => {
                     <FiArrowRight size={18} />
                   </button>
 
-                  <p className="text-center text-slate-400 text-xs mt-4">
-                    🔒 আপনার তথ্য সম্পূর্ণ নিরাপদ ও গোপনীয়
+                  <p className="text-center text-slate-400 text-xs mt-4 flex items-center justify-center gap-1.5">
+                    <FaLock className='text-amber-300'/> আপনার তথ্য সম্পূর্ণ নিরাপদ ও গোপনীয়
                   </p>
                 </>
               )}
