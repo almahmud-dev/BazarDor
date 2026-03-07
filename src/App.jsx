@@ -29,7 +29,6 @@ const App = () => {
   return (
     <>
       {showModal && <Modal onClose={() => setShowModal(false)} />}
-      {/* <Modal/> */}
       <Navber/>
       <Banner/>
       <Items/>

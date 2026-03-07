@@ -1,6 +1,5 @@
 import React from "react";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
-import { MdOutlineAccountBalance } from "react-icons/md";
 import footerLogo from "../../src/assets/Images/logo/Footer_logo.png";
 import bdgovt from "../../src/assets/Images/Footer/bd-govt.png";
 import voktaodhikar from "../../src/assets/Images/Footer/vokta-odhikar.png";
@@ -64,17 +63,17 @@ const Footer = () => {
             </h4>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-3 text-sm text-teal-100/80">
-                <FiPhone size={15} className="text-teal-400 flex-shrink-0" />
+                <FiPhone size={15} className="text-teal-400 shrink-0" />
                 Hotline: 16121 (Toll Free)
               </li>
               <li className="flex items-center gap-3 text-sm text-teal-100/80">
-                <FiMail size={15} className="text-teal-400 flex-shrink-0" />
+                <FiMail size={15} className="text-teal-400 shrink-0" />
                 support@bazardor.gov.bd
               </li>
               <li className="flex items-start gap-3 text-sm text-teal-100/80">
                 <FiMapPin
                   size={15}
-                  className="text-teal-400 flex-shrink-0 mt-0.5"
+                  className="text-teal-400 shrink-0 mt-0.5"
                 />
                 Building #3, Level 5, Bangladesh Secretariat, Dhaka.
               </li>
