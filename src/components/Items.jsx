@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FiClock, FiGrid, FiList, FiX, FiChevronDown } from 'react-icons/fi'
+import { FaBangladeshiTakaSign } from "react-icons/fa6";
 
 import peyaj from '../../src/assets/Images/Items/peyaj.png'
 import cal from '../../src/assets/Images/Items/cal.png'
@@ -58,7 +59,7 @@ const itemsData = [
     category: 'oils',
     image: tel,
   },
-  // নতুন item যোগ করতে এখানে add করো
+  
 ]
 
 const ITEMS_PER_PAGE = 5
@@ -100,7 +101,7 @@ const ListRow = ({ item, onDetails }) => (
     <img
       src={item.image}
       alt={item.name}
-      className="w-16 h-16 rounded-xl object-cover flex-shrink-0"
+      className="w-16 h-16 rounded-xl object-cover shrink-0"
     />
     <div className="flex-1 min-w-0">
       <p className="font-bold text-gray-900 text-base">
@@ -150,7 +151,7 @@ const DetailsModal = ({ item, allItems, onClose }) => {
           <img
             src={item.image}
             alt={item.name}
-            className="w-28 h-28 rounded-2xl object-cover flex-shrink-0"
+            className="w-28 h-28 rounded-2xl object-cover shrink-0"
           />
           <div>
             <h2 className="text-xl font-extrabold text-gray-900 leading-snug">
@@ -183,13 +184,13 @@ const DetailsModal = ({ item, allItems, onClose }) => {
                   <img
                     src={rel.image}
                     alt={rel.name}
-                    className="w-12 h-12 rounded-lg object-cover flex-shrink-0"
+                    className="w-12 h-12 rounded-lg object-cover shrink-0"
                   />
                   <div>
                     <p className="font-semibold text-gray-900 text-sm leading-tight">{rel.name}</p>
                     <p className="text-gray-400 text-xs">{rel.banglaName}</p>
                     <p className="text-green-700 font-bold text-sm mt-0.5">
-                      ৳{rel.price}/{rel.unit}
+                      <FaBangladeshiTakaSign />{rel.price}/{rel.unit}
                     </p>
                   </div>
                 </div>
