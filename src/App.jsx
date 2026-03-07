@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react'  // ✅ useState add
+import { useEffect, useState } from 'react' 
 import Navber from './components/Navber'
 import Banner from './components/Banner'
 import Items from './components/Items'
-import Category from './components/Category'
 import From from './components/From'
 import Footer from './components/Footer'
 import Lenis from 'lenis'
@@ -32,7 +31,6 @@ const App = () => {
       <Navber/>
       <Banner/>
       <Items/>
-      <Category/>
       <From/>
       <Footer/>
     </>
