@@ -1,6 +1,6 @@
 @import "tailwindcss";
 .container {
-    @apply max-w-[1232px] mx-auto;
+    @apply max-w-308 mx-auto;
 }
 @theme {
     --font-inter: "Inter", sans-serif;
