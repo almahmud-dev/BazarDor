@@ -35,8 +35,8 @@ const Footer = () => {
       <footer className="footer-font bg-[#071a13] text-white relative overflow-hidden">
 
         {/* ── ব্যাকগ্রাউন্ড ডেকোর ── */}
-        <div className="pointer-events-none absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#0e7c61]/8 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 -left-20 w-[300px] h-[300px] rounded-full bg-teal-900/30 blur-3xl" />
+        <div className="pointer-events-none absolute -top-40 -right-40 w-125 h-125 rounded-full bg-[#0e7c61]/8 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 -left-20 w-75 h-75 rounded-full bg-teal-900/30 blur-3xl" />
         {/* সূক্ষ্ম গ্রিড */}
         <div className="pointer-events-none absolute inset-0 opacity-[0.03]"
           style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)', backgroundSize: '40px 40px' }} />
@@ -67,7 +67,7 @@ const Footer = () => {
             <div className="lg:col-span-4 flex flex-col gap-5">
               {/* লোগো + সিল */}
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 bg-white rounded-xl flex items-center justify-center p-1.5 shadow-lg shadow-black/20 flex-shrink-0">
+                <div className="w-11 h-11 bg-white rounded-xl flex items-center justify-center p-1.5 shadow-lg shadow-black/20 shrink-0">
                   <img src={bdgovt} alt="বাংলাদেশ সরকার" className="w-full h-full object-contain" />
                 </div>
                 <img src={footerLogo} alt="বাজারদর" className="h-9 w-auto" />
@@ -80,7 +80,7 @@ const Footer = () => {
 
               {/* হটলাইন কার্ড */}
               <div className="flex items-center gap-3 bg-[#0e7c61]/15 border border-[#0e7c61]/25 rounded-2xl px-4 py-3">
-                <div className="w-9 h-9 rounded-xl bg-[#0e7c61]/30 flex items-center justify-center flex-shrink-0">
+                <div className="w-9 h-9 rounded-xl bg-[#0e7c61]/30 flex items-center justify-center shrink-0">
                   <FiPhone size={15} className="text-teal-300" />
                 </div>
                 <div>
@@ -105,7 +105,7 @@ const Footer = () => {
                       rel={link.external ? "noopener noreferrer" : undefined}
                       className="footer-link-hover flex items-center gap-1.5 text-sm text-teal-100/70 hover:text-white transition-colors duration-200"
                     >
-                      <FiArrowUpRight size={13} className="text-[#0e7c61] flex-shrink-0" />
+                      <FiArrowUpRight size={13} className="text-[#0e7c61] shrink-0" />
                       {link.label}
                     </a>
                   </li>
@@ -120,7 +120,7 @@ const Footer = () => {
               </h4>
               <ul className="flex flex-col gap-4">
                 <li className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center shrink-0">
                     <FiMail size={13} className="text-teal-400" />
                   </div>
                   <a href="mailto:support@bazardor.gov.bd" className="text-sm text-teal-100/70 hover:text-white transition-colors">
@@ -128,7 +128,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
                     <FiMapPin size={13} className="text-teal-400" />
                   </div>
                   <p className="text-sm text-teal-100/70 leading-relaxed">
