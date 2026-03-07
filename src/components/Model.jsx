@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaRegCheckCircle, FaRegMap } from "react-icons/fa";
 import { IoClose, IoLocationSharp } from "react-icons/io5";
 import { RiPinDistanceLine } from "react-icons/ri";
-import useLocationStore from '../store/locationStore' // ✅ এই line add করুন
+import useLocationStore from '../store/locationStore' 
 const Modal = ({ onClose }) => {
     const setLocation = useLocationStore((state) => state.setLocation)
   const [division, setDivision] = useState("");
@@ -120,7 +120,7 @@ const Modal = ({ onClose }) => {
             </button>
             <button
               onClick={handleSubmit}
-              className="flex-[1.5] py-2 sm:py-4 rounded-lg font-bold bg-primary text-black hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2"
+              className="flex-[1.5] py-2 sm:py-4 rounded-lg font-bold bg-primary text-black hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2 cursor-pointer"
             >
               <FaRegCheckCircle className="xs:text-lg" />
               সিলেক্ট করুন
