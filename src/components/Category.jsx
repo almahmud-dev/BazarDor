@@ -47,7 +47,7 @@ const categories = [
 
 const Category = () => {
   return (
-    <section className="bg-gray-100">
+    <section className="bg-gray-100 py-10">
       <div className="container px-6">
 
         <h2 className="text-center text-2xl font-extrabold text-gray-900 mb-10">
