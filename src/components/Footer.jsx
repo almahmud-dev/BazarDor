@@ -1,38 +1,33 @@
-import React from 'react'
-import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi'
-import { MdOutlineAccountBalance } from 'react-icons/md'
-import footerLogo from '../../src/assets/Images/logo/Footer_logo.png'
-
-// Bangladesh Government seal — official public domain image
-const BD_GOV_SEAL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Emblem_of_Bangladesh.svg/200px-Emblem_of_Bangladesh.svg.png'
+import React from "react";
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
+import { MdOutlineAccountBalance } from "react-icons/md";
+import footerLogo from "../../src/assets/Images/logo/Footer_logo.png";
+import bdgovt from "../../src/assets/Images/Footer/bd-govt.png";
+import voktaodhikar from "../../src/assets/Images/Footer/vokta-odhikar.png";
 
 const quickLinks = [
-  { label: 'Daily Price Chart', href: '#' },
-  { label: 'Market Analysis', href: '#' },
-  { label: 'Consumer Rights Act', href: '#' },
-  { label: 'DNCRP Portal', href: '#' },
-]
-
+  { label: "Daily Price Chart", href: "#" },
+  { label: "Market Analysis", href: "#" },
+  { label: "Consumer Rights Act", href: "#" },
+  { label: "DNCRP Portal", href: "#" },
+];
+const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="bg-[#0d2b1f] text-white">
-      <div className="max-w-6xl mx-auto px-6 py-14">
+      <div className="container px-6 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-
           {/* Col 1 — Brand */}
           <div className="flex flex-col gap-4">
             {/* Gov seal left + Bazardor logo right */}
             <div className="flex items-center gap-3">
               <img
-                src={BD_GOV_SEAL}
+                src={bdgovt}
                 alt="Bangladesh Government Seal"
                 className="w-10 h-10 object-contain bg-white rounded-full p-1"
               />
               <div className="flex items-center gap-2">
-                <div className="w-9 h-9 rounded-full bg-teal-600 flex items-center justify-center flex-shrink-0">
-                  <MdOutlineAccountBalance size={18} className="text-white" />
-                </div>
-                <span className="text-xl font-extrabold tracking-tight">Bazardor</span>
+                <img src={footerLogo} alt="Bazardor" className=" w-full" />
               </div>
             </div>
             {/* OR if you have a footer logo image, use: */}
@@ -77,7 +72,10 @@ const Footer = () => {
                 support@bazardor.gov.bd
               </li>
               <li className="flex items-start gap-3 text-sm text-teal-100/80">
-                <FiMapPin size={15} className="text-teal-400 flex-shrink-0 mt-0.5" />
+                <FiMapPin
+                  size={15}
+                  className="text-teal-400 flex-shrink-0 mt-0.5"
+                />
                 Building #3, Level 5, Bangladesh Secretariat, Dhaka.
               </li>
             </ul>
@@ -91,21 +89,26 @@ const Footer = () => {
             <div className="flex gap-3">
               <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center p-1.5">
                 <img
-                  src={BD_GOV_SEAL}
+                  src={bdgovt}
                   alt="Bangladesh Emblem"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center p-1.5">
-                <img
-                  src={footerLogo}
-                  alt="Bazardor Logo"
-                  className="w-full h-full object-contain"
-                />
+                <a
+                  href="https://dncrp.gov.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={voktaodhikar}
+                    alt="Vokta Odhikar Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Divider */}
@@ -113,11 +116,12 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <p className="text-center text-xs text-teal-200/50">
-          © 2024 Bazardor Government Price Portal. All Rights Reserved. Developed by ICT Division.
+          © {currentYear} Bazardor Government Price Portal. All Rights Reserved.
+          Developed by ICT Division.
         </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

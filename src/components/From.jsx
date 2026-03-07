@@ -77,7 +77,7 @@ const From = () => {
 
   return (
     <section className="bg-gray-100 py-14">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="container px-6">
 
         {/* Top Features */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12 text-center">
