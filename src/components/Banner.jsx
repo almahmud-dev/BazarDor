@@ -13,7 +13,7 @@ const PriceTag = ({ label, price, change, up = false, delay = '0ms' }) => (
     className="flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg border border-white/60"
     style={{ animation: `slideUp 0.6s ease both`, animationDelay: delay }}
   >
-    <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${up ? 'bg-red-50' : 'bg-emerald-50'}`}>
+    <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${up ? 'bg-red-50' : 'bg-emerald-50'}`}>
       {up
         ? <MdTrendingUp className="text-red-500 text-lg" />
         : <MdTrendingDown className="text-[#0e7c61] text-lg" />}
@@ -36,9 +36,9 @@ const PriceTag = ({ label, price, change, up = false, delay = '0ms' }) => (
 const BgDecor = () => (
   <>
     {/* বড় সবুজ বৃত্ত — উপরে ডানে */}
-    <div className="pointer-events-none absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-[#0e7c61]/6 blur-3xl" />
+    <div className="pointer-events-none absolute -top-32 -right-32 w-130 h-130 rounded-full bg-[#0e7c61]/6 blur-3xl" />
     {/* হলুদ আভা — নিচে বামে */}
-    <div className="pointer-events-none absolute -bottom-20 -left-20 w-[360px] h-[360px] rounded-full bg-amber-400/8 blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-20 -left-20 w-90 h-90 rounded-full bg-amber-400/8 blur-3xl" />
     {/* সূক্ষ্ম গ্রিড প্যাটার্ন */}
     <div
       className="pointer-events-none absolute inset-0 opacity-[0.035]"
@@ -107,7 +107,7 @@ const Banner = () => {
 
               {/* ব্যাজ */}
               <div className="anim-1 inline-flex items-center gap-2 border border-[#0e7c61]/30 bg-white/80 backdrop-blur-sm text-[#0e7c61] text-xs font-bold tracking-wider px-4 py-2 rounded-full mb-6 shadow-sm">
-                <TbShieldCheck className="text-sm flex-shrink-0" />
+                <TbShieldCheck className="text-sm shrink-0" />
                 বাণিজ্য মন্ত্রণালয় অনুমোদিত তথ্য
               </div>
 
@@ -172,7 +172,7 @@ const Banner = () => {
                   <img
                     src={banner}
                     alt="তাজা সবজির বাজার"
-                    className="w-full h-[280px] sm:h-[380px] lg:h-[440px] object-cover"
+                    className="w-full h-70 sm:h-95 lg:h-110 object-cover"
                   />
                   {/* গ্রেডিয়েন্ট ওভারলে */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
