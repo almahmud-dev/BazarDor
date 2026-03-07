@@ -220,8 +220,8 @@ const Items = () => {
 
   return (
     <>
-      <section className="bg-gray-100 min-h-screen py-10">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="bg-gray-100 py-10">
+        <div className="container px-6">
 
           {/* Header */}
           <div className="flex flex-wrap items-start justify-between gap-4 mb-8">
