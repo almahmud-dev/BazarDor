@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import { FiClock, FiGrid, FiList, FiX, FiChevronDown, FiSearch, FiArrowLeft } from 'react-icons/fi'
 import { TbArrowsSort } from 'react-icons/tb'
-
+import useSearchStore from '../store/searchStore'
 // ─── Image imports ────────────────────────────────────────────────────────────
 import চালImg    from '../../src/assets/Images/Items/চাল.png'
 import আটাImg    from '../../src/assets/Images/Items/আটা.png'
@@ -286,7 +286,7 @@ const Items = () => {
   const [view,          setView]          = useState('list')
   const [selectedItem,  setSelectedItem]  = useState(null)
   const [visibleCount,  setVisibleCount]  = useState(ITEMS_PER_PAGE)
-  const [searchQuery,   setSearchQuery]   = useState('')
+  const { searchQuery, setSearchQuery } = useSearchStore()
   const [activeCategory,setActiveCategory]= useState('সব')
   const [sortOrder,     setSortOrder]     = useState('default') // default | low | high
 
@@ -330,7 +330,7 @@ const Items = () => {
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
       `}</style>
 
-      <section className="items-font bg-[#f4f7f5] min-h-screen py-8">
+      <section id="items-section" className="items-font bg-[#f4f7f5] min-h-screen py-8">
         <div className="container mx-auto px-4 lg:px-6">
 
           {/* ── শিরোনাম ── */}
